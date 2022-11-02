@@ -1,6 +1,6 @@
 {
-  "buildCommand": "pnpm run netlify-build",
+  "buildCommand": "pnpm netlify-build",
   "outputDirectory": "dist",
-  "devCommand": "pnpm run dev",
+  "devCommand": "pnpm dev",
   "installCommand": "pnpm install"
 }
