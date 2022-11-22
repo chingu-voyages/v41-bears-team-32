@@ -2,9 +2,7 @@
 
 # Zavy - An eCommerce Marketplace
 
-🚀 **Deployed at:** [https://zavy.vercel.app/](https://zavy.vercel.app/) && [https://zavy.netlify.app/](https://zavy.netlify.app/)
-
-Zavy is an eCommerce marketplace built by `v41-bears-team-32`.
+Zavy is an eCommerce marketplace built by `v41-bears-team-32`
 
 ### MVP Features:
 
@@ -13,7 +11,42 @@ Zavy is an eCommerce marketplace built by `v41-bears-team-32`.
 - Seller can create their product card with live preview
 - Payment processing via Stripe
 - Failed or pending payment handling
-- Stateful Cart which remebers your selection
+- Stateful Cart which remembers your selection
+- Order tracking and status update
+
+## Preview
+
+![homepage](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/Homepage.png)
+
+![create-product](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/create-product.png)
+
+![product-page](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/product-page.png)
+
+![cart](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/cart.png)
+
+![checkout](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/checkout.png)
+
+![zavy-stripe-integration](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/custom-stripe.png)
+
+![payment-success](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/payment-success.png)
+
+![buyer-orders](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/buyer-order.png)
+
+![buyer-order-page](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/buyer-order-page.png)
+
+![seller-order-page](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/seller-order-page.png)
+
+![seller-order-page-status](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/seller-order-page-status.png)
+
+![buyer-orders-after-status-update](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/buyer-orders-updated-status.png)
+
+![order-with-pending-payment](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/buyer-order-page-pending-payment.png)
+
+![seller-product-dashboard](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/seller-products.png)
+
+![address-book](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/address-book.png)
+
+![login-page](https://raw.githubusercontent.com/chingu-voyages/v41-bears-team-32/main/preview/login.png)
 
 ## Local Development Steps:
 
@@ -27,7 +60,7 @@ $ `docker run --name zavy -e POSTGRES_PASSWORD=password -p 5432:5432 -d --rm pos
 
 This project uses [pnpm](https://pnpm.io/) for managing dependancies. If you don't already have it installed, install it using `npm install -g pnpm` or choose other available methods [here](https://pnpm.io/installation) and then:
 
-- `git clone https://github.com/chingu-voyages/v41-bears-team-32.git && cd v41-bears-team-32`
+- `git clone` this repo and `cd` into it
 - `pnpm install`
 
 #### 🛑 Complete 3️⃣ before continuing...
@@ -53,7 +86,7 @@ NEXTAUTH_SECRET=VJ13WCJAjH1SNoLpvUUIWhvk9+cEfsnOMnjssSsvzJQ=
 NEXTAUTH_LOGIN=http://localhost:3000/api/login
 NEXTAUTH_SIGNUP=http://localhost:3000/api/signup
 CLOUDINARY_URL=<cloudinary://[API_KEY]:[API_SECRET]@[CLOUD_NAME]>
-STRIPE_SECRET_KEY=<your-secret-key>
+STRIPE_SECRET_KEY=<your-test-mode-secret-key>
 NEXT_PUBLIC_CURRENT_URL=http://localhost:3000/
 CURRENT_ENV=dev
 ```
